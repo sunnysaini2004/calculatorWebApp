@@ -151,3 +151,73 @@ header h1 {
 .dotBtn {
     font-size: 2rem;
 }
+
+/* ResponsiveNess for mobile     */
+/* 📱 Tablets (768px and below) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .calculatorContainer {
+        width: 90vw;
+        margin: 1rem auto;
+    }
+
+    .displayInput input {
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    .calBtn {
+        width: 3.2rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* 📱 Mobiles (480px and below) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .calculatorContainer {
+        width: 95vw;
+        margin: 1rem auto;
+    }
+
+    .displayInput input {
+        height: 3rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding: 0 0.5rem;
+    }
+
+    .buttonContainer {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .calBtn {
+        width: 2.5rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .clearBtn,
+    .xBtn {
+        width: 100%;
+        /* take full width on small screens */
+        grid-column: span 2;
+    }
+
+    .clearBtn button,
+    .xBtn button {
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+}
