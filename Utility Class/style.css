@@ -1,0 +1,22 @@
+.numberBtnCol {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.operatorBtnCol {
+    color: #ffff;
+    background-color: #f3a33c;
+}
+
+.clearBtnCol {
+    color: #000000;
+    background-color: #a5a5a5;
+}
+
+.bgColor {
+    color: #000000;
+}
+
+.inputCol {
+    color: #ffffff;
+}
