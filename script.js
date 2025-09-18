@@ -21,6 +21,9 @@ buttons.forEach((button) => {
     button.addEventListener("click", (evt) => {
         let btnValue = evt.target.textContent;
 
+        // 🔥 Fix for mobile tap highlight "sticking"
+        setTimeout(() => button.blur(), 100);
+
         if (btnValue === "DEL") {
             input.value = input.value.slice(0, -1); // assign back ✅
         } else if (btnValue === "AC") {
